@@ -72,7 +72,6 @@ int uncompress(string inputFile, string outputFile) {
 	}
 	/** Build the Huffman coding tree using freqs vector */
 	HCT->build(freqs);
-	int size = HCT->leaves.size();
 
 	/** Create string as buffer for uncompressed message */
 	string lastLine = string();
@@ -164,7 +163,7 @@ int compress(string inputFile, string outputFile) {
 	outBOS.writeInt(uniqASCII, BIT_SIZE_UNIQ_ASCII);
 
 	/** Convert number of bits needed to store max frequency to byte */
-	byte bitFreqs = floor(log2(maxFreq)) + 1;
+	byte bitFreqs = (byte)(floor(log2(maxFreq)) + 1);
 
 	/** Write the number of bits needed to represent the max frequency */
 	outBOS.writeInt(bitFreqs, BIT_SIZE_BIT_FREQS);
