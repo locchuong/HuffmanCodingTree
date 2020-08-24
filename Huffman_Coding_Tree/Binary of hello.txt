@@ -1,0 +1,14 @@
+10000001 00000001 00101101 00110100 11011001 11101101 10011111 00000000 00110100 001010
+
+10000001 00000001 00101101 00110100 11011001 11101101 10011111 00000000 00110100 001010
+
+
+9 first bits => number of unique ASCII values
+
+5 next bits => Represents the max frequency of any given  ASCII val
+
+
+Following bits arranged as seen below
+
+ ASCII  FREQ
+|1Byte| |bitFreqs|

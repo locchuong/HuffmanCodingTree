@@ -1,0 +1,26 @@
+{
+  "FileVersion": 2,
+  "Id": "ee28abe8-460c-4e71-b3d3-55570b7f0786",
+  "Items": [
+    {
+      "Id": "6f637fc8-83b5-4fcc-a307-a7393f713eba",
+      "Command": "hello.txt mycomp.txt myuncomp.txt"
+    },
+    {
+      "Id": "6f0af1d5-8425-4363-975f-ddd4eed434de",
+      "Command": "compress hello.txt mycomp.txt"
+    },
+    {
+      "Id": "a2c3ae30-ba2c-4b65-862b-dfd2a21f7873",
+      "Command": "compress"
+    },
+    {
+      "Id": "9b3920b1-23d6-4bb4-8cda-ad4c46e121a2",
+      "Command": "hello.txt mycomp.txt"
+    },
+    {
+      "Id": "cf829766-0cec-4410-8690-c40ffc703423",
+      "Command": "warandpeace.txt mycomp.txt myuncomp.txt"
+    }
+  ]
+}
