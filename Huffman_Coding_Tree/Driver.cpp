@@ -232,9 +232,9 @@ int main(int argc, char** argv) {
 			if (command.compare("compress") == 0) { flag = 0; break; }
 			if (command.compare("uncompress") == 0) { flag = 1;  break; }
 		}
-		cout << "Type in the name of the input file" << endl;
+		cout << "Type in the name of the input file (Include extension i.e. '.txt')" << endl;
 		cin >> inputFile;
-		cout << "Type in the desire name of the output file" << endl;
+		cout << "Type in the desire name of the output file (Include extension i.e. '.txt')" << endl;
 		cin >> outputFile;
 		/** Perform compression or decompression */
 		if (flag == 0) compress(inputFile, outputFile);
