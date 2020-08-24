@@ -219,8 +219,8 @@ int main(int argc, char** argv) {
 	/** Initialize user input strings, char, and flag */
 	string inputFile{};
 	string outputFile{};
+	string cont{};
 	string command{};
-	char cont;
 	int flag = -1;
 	cout << "Huffman Coding Tree" << endl;
 	/** Loop until user exits */
@@ -240,13 +240,18 @@ int main(int argc, char** argv) {
 		if (flag == 0) compress(inputFile, outputFile);
 		if (flag == 1) uncompress(inputFile, outputFile);
 		/** Ask user if they want to loop through program */
-		cout << "Do you want to continue? (y/n)" << endl;
-		cin >> cont;
-		if (cont == 'y') {
-			continue;
-		}
-		else {
-			break;
+		while (1) {
+			cout << "Do you want to continue? (y/n)" << endl;
+			cin >> cont;
+			if (cont.compare("y") == 0) {
+				break;
+			}
+			else if (cont.compare("n") == 0) {
+				return 0;
+			}
+			else {
+				continue;
+			}
 		}
 	}
 	return 0;
